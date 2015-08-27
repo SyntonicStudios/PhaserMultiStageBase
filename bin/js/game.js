@@ -16,6 +16,8 @@ var Castlevania;
             this.load.image('preloadBar', 'assets/loader.png');
         };
         Boot.prototype.create = function () {
+            // Enable Arcade Physics
+            this.game.physics.enable(this, Phaser.Physics.ARCADE);
             //  Unless you specifically need to support multitouch I would recommend setting this to 1
             this.input.maxPointers = 1;
             //  Phaser will automatically pause if the browser tab the game is in loses focus. You can disable that here:
@@ -96,7 +98,8 @@ var Castlevania;
         __extends(Player, _super);
         function Player(game, x, y) {
             _super.call(this, game, x, y, 'simon', 0);
-            game.physics.enable(this, Phaser.Physics.ARCADE);
+            // Enable Player's Physics Body
+            this.game.physics.arcade.enableBody(this);
             this.anchor.setTo(0.5, 0);
             this.animations.add('walk', [0, 1, 2, 3, 4], 10, true);
             game.add.existing(this);
@@ -164,9 +167,8 @@ var Castlevania;
     })(Phaser.Game);
     Castlevania.Game = Game;
 })(Castlevania || (Castlevania = {}));
-// when the page has finished loading, create our game
+// When the page has finished loading, create our game
 window.onload = function () {
-    // game = new IDemon();
     var game = new Castlevania.Game();
 };
 //# sourceMappingURL=game.js.map

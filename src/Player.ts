@@ -6,7 +6,8 @@ module Castlevania {
  
         constructor(game: Phaser.Game, x: number, y: number) {
             super(game, x, y, 'simon', 0);
-            game.physics.enable(this, Phaser.Physics.ARCADE);
+            // Enable Player's Physics Body
+            this.game.physics.arcade.enableBody(this);
             this.anchor.setTo(0.5, 0);
             this.animations.add('walk', [0, 1, 2, 3, 4], 10, true);
             game.add.existing(this);
