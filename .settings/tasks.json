@@ -21,7 +21,8 @@
 	
 	// The args to pass to the typescript compiler
 	// "args": ["--out","bin/js/game.js"],
-	"args": ["--out","bin/js/game.js", "-sourceMap"],
+	"args": ["--out","bin/js/game.js", "-sourceMap", "--watch"],
+	// "args": ["--out","bin/js/game.js", "-sourceMap"],
 	
 	// use the standard tsc problem matcher to find compile problems
 	// in the output.

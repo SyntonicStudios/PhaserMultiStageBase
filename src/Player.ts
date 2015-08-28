@@ -18,7 +18,7 @@ module Castlevania {
  
             if (this.game.input.keyboard.isDown(Phaser.Keyboard.LEFT)) {
  
-                this.body.velocity.x = -150;
+                this.body.velocity.x = -250;
                 this.animations.play('walk');
  
                 if (this.scale.x == 1) {
@@ -27,7 +27,7 @@ module Castlevania {
             }
             else if (this.game.input.keyboard.isDown(Phaser.Keyboard.RIGHT)) {
  
-                this.body.velocity.x = 150;
+                this.body.velocity.x = 250;
                 this.animations.play('walk');
  
                 if (this.scale.x == -1) {
