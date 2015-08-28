@@ -26,5 +26,6 @@ module Castlevania {
 
 // When the page has finished loading, create our game
 window.onload = () => {
-	var game = new Castlevania.Game();
+    var game;
+	game = new Castlevania.Game();
 }

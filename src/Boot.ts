@@ -8,7 +8,7 @@ module Castlevania {
             this.load.image('preloadBar', 'assets/loader.png');
         }
  
-        create() {
+        create() { 
             // Enable Arcade Physics
             this.game.physics.enable(this, Phaser.Physics.ARCADE);
             //  Unless you specifically need to support multitouch I would recommend setting this to 1
