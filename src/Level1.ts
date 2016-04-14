@@ -1,4 +1,4 @@
-/// <reference path="../tsDefinitions/phaser.d.ts" />
+/// <reference path="../tsDefinitions/phaser.comments.d.ts" />
 /// <reference path="Player.ts" />
 
 module Castlevania {
